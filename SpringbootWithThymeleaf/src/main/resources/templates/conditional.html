@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Example</title>
+</head>
+<body>
+    <h1>Number Comparison</h1>
+    
+    <!-- Properly closed expression -->
+    <div th:if="${no1 > no2}">
+        <p>no1 is greater than no2</p>
+    </div>
+    
+    <div th:unless="${no1 > no2}">
+        <p>no1 is not greater than no2</p>
+    </div>
+    
+    <!-- Alternative syntax -->
+    <div th:if="${no1 lt no2}">
+        <p>no1 is less than no2</p>
+    </div>
+</body>
+</html>
